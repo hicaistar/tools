@@ -17,6 +17,13 @@
 - git rebase 过程（解决冲突）
 - git push origin develop 
 
+### rebase 冲突
+- 可以把自己修改的代码拿出去
+- 把本地分支（比如 develop）删掉
+- git pull --rebase upstream (无冲突)
+- 在新建 develop 分支
+- git push -f
+
 ## 提 PR
 如果 develop 与 upstream 没有 commit 冲突，直接创建 merger PR,如果有冲突，需要 git pull --rebase 之后再提 PR
 
